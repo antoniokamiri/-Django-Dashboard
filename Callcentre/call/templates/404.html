@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid">
+            <h1 class="mt-4">Requested Not Found</h1>
+            <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}">Dashboard</a></li>
+                <li class="breadcrumb-item active">Error 404</li>
+            </ol>
+            <div id="layoutError">
+                <div id="layoutError_content">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="text-center mt-4">
+                                    <img class="mb-4 img-error" src="{% static 'call/assets/img/error-404-monochrome.svg' %}" />
+                                    <p class="lead">This requested URL was not found on this server.</p>
+                                    <a href="{% url 'home' %}">
+                                        <i class="fas fa-arrow-left mr-1"></i>
+                                        Return to Dashboard
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+<div id="layoutSidenav_content">
+  <main>
+    <div class="container-fluid">
+      <h1 class="mt-4">Disclaimer</h1>
+      <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="{% url 'home' %}">Dashboard</a></li>
+        <li class="breadcrumb-item active">Disclaimer</li>
+      </ol>
+      <div id="layoutError">
+        <div id="layoutError_content">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <div class="text-center mt-4">
+                  <h1 class="display-1">Disclaimer</h1>
+                  <p>Although we have taken care to ensure that the content on this site is accurate and that you suffer
+                    no loss or damage as a result of your use of this site, this site and the online services are
+                    provided "as is".</p>
+                  <p>Use of this site and the online services is entirely at your own risk. You assume full
+                    responsibility for the risk or loss resulting from your use of this site and your reliance on the
+                    material and information contained on it.</p>
+                  <p>We and our affiliates, shareholders, agents, consultants or employees are not liable for any
+                    damages whatsoever relating to your use of this site or the online services or the information
+                    contained on this site or your inability to use this site or the online services. This includes,
+                    without limitation, any direct, indirect, special, incidental, consequential or punitive damages,
+                    whether arising out of contract, statute, delict or otherwise and regardless of whether we were
+                    expressly advised of the possibility of such loss or damage.</p>
+                  <p> Without derogating from the generality of the above, we will not be liable for:</p>
+                  <p>I. Any interruption, malfunction, downtime or other failure of the site or online services, our
+                    system, databases or any of its components, for whatever reason;</p>
+                  <p>II. Any loss or damage with regard to customer data or other data directly or indirectly caused by
+                    malfunction of our system, third party systems, power failures, unlawful access to or theft of data,
+                    computer viruses or destructive code on our system or third party systems; programming defects;
+                    negligence on our part;</p>
+                  <p>III. Any interruption, malfunction, downtime or other failure of goods or services provided by
+                    third parties, including, without limitation, third party systems such as the public switched
+                    telecommunication service providers, internet service providers, electricity suppliers, local
+                    authorities and certification authorities;</p>
+                  <p>IV. Any event over which we have no direct control.</p>
+                  <p>No failure or delay by us to exercise any of our rights will be construed as a waiver of any such
+                    right, whether this is done expressly or implied, nor will it affect the validity of any part these
+                    conditions or prejudice our right to take subsequent action against you.</p>
+                  <p>If any of these terms, conditions or provisions are held to be invalid, unlawful or unenforceable;
+                    the term, condition or provision will be deleted from the remaining terms, conditions and provisions
+                    which will continue to be valid to the full extent permitted by law.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}
